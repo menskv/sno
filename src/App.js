@@ -1,25 +1,34 @@
-import logo from './logo.svg';
 import './App.css';
+import {MainPage, Docs, Works, Events, Group} from "./components";
+import {Routes, Route} from "react-router";
+import {BrowserRouter} from "react-router-dom";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <BrowserRouter>
+            <Routes>
+                <Route path="/" exact element={
+                    <MainPage/>
+                }/>
+
+                <Route path="/founding-documents" exact element={
+                    <Docs/>
+                }/>
+
+                <Route path="/group-sno" exact element={
+                    <Group/>
+                }/>
+
+                <Route path="/collected-works" exact element={
+                    <Works/>
+                }/>
+
+                <Route path="event-calendar" exact element={
+                    <Events/>
+                }/>
+            </Routes>
+        </BrowserRouter>
+    );
 }
 
 export default App;
