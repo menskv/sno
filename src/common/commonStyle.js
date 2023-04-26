@@ -14,8 +14,7 @@ export const Container = styled.div`
   max-width: 1160px;
   margin: 0 auto;
   padding: 0 16px;
-  font-family: "TT Norms";
-
+  flex: 1 1 auto;
 `
 export const AppWrapper = styled.div`
   display: flex;
@@ -25,6 +24,9 @@ export const AppWrapper = styled.div`
 `
 export const Main = styled.main`
   flex: 1 1 auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 `
 
 export const Flex = styled.div`

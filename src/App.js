@@ -1,5 +1,5 @@
 import './App.css';
-import {MainPage, Docs, Works, Events, Group} from "./components";
+import {MainPage, Docs, Works, Events, Group} from "./pages";
 import {Routes, Route} from "react-router";
 import {BrowserRouter} from "react-router-dom";
 

@@ -1,23 +1,27 @@
 import React from 'react';
-import {Wrapper, ButtonCalendar, Logo, WrapperText, Text} from "./style"
+import {Wrapper, ButtonCalendar, Logo, WrapperText, Text, Link} from "./style"
 
 export const Header = () => {
     return (
         <Wrapper>
-            <Logo>
+            <Logo href="/">
                 СНО
             </Logo>
             <WrapperText>
-                <Text maxWidth="200px">
-                    Учредительная документы
+                <Text>
+                    <Link href="/founding-documents"> Учред документы
+                    </Link>
                 </Text>
-                <Text maxWidth="140px">
-                    Состав СНО
+                <Text>
+                    <Link href="/group-sno"> Состав СНО
+                    </Link>
                 </Text>
-                <Text maxWidth="140px">
-                    Сборник трудов
+                <Text>
+                    <Link href="/collected-works"> Сборник трудов
+                    </Link>
                 </Text>
-                <ButtonCalendar maxWidth="100px">
+                <ButtonCalendar href="/event-calendar"
+                                maxWidth="100px">
                     Расписание мероприятий
                 </ButtonCalendar>
             </WrapperText>

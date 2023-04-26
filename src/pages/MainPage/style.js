@@ -4,12 +4,13 @@ export const Title = styled.div`
   font-size: 64px;
   font-weight: 700;
   max-width: 600px;
-  padding: 150px 0 20px 0;
+  padding: 90px 0 20px 0;
 `
 export const Text = styled.div`
-  font-size: 16px;
+  font-size: 24px;
   font-weight: 400;
-  max-width: 500px;
+  max-width: 700px;
+  text-decoration: underline #EB633D;
 `
 export const TitleWrapper = styled.div`
 `
